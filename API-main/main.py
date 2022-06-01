@@ -97,5 +97,4 @@ async def resetpverif(name:str,mail:str,code:str,password:str):
 
 if __name__ == "__main__":
     #Start the server
-    print("HE")
     uvicorn.run(app, host=settings[10], port=5000)
