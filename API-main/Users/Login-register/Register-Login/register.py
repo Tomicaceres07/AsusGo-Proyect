@@ -1,0 +1,2 @@
+def exist(mail):
+    pass

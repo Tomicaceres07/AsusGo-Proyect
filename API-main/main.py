@@ -1,4 +1,4 @@
-from flask import Flask, request,session
+from flask import Flask, request
 from Users.Verificate.verificate import callback
 from Users.users import usrlogin,verif
 from DataBase.database import DataBase
@@ -19,10 +19,10 @@ def login():
         return {'msj':'error'}
 
 #Verif route
-@app.route("/callback")
-def verif():
+@app.route('/callback')
+def verification():
     try:
-        context = verif(request.url)
+        context = verif(request.url,database)
         return context
     except:
         return {'msj':'error'}
