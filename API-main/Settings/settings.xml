@@ -5,7 +5,7 @@
 <data>
     <DB_host>localhost</DB_host>
     <DB_user>root</DB_user>
-    <DB_password>123456789</DB_password>
+    <DB_password>password</DB_password>
     <DB>api_base</DB>
     <Start_page>http://localhost:5000/api</Start_page>
     <Login_page>http://localhost:5000/api</Login_page>

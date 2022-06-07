@@ -22,6 +22,7 @@ export const AlumnosHomeScreen = () => {
       <h1>AlumnosHomeScreen</h1>
       <p>{msj}</p>
       <p>This is for Notion documentation about Git. Don't mind</p>
+      <p>This is a test for git branches</p>
     </div>
   );
 }
