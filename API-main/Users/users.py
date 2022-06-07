@@ -1,5 +1,4 @@
 from Users.Verificate.verificate import *
-from Users.Login.login import login
 
 #Login
 def usrlogin():
@@ -13,14 +12,13 @@ def usrlogin():
 def verif(url,database):
     try:
         context =callback(url)
-        print(context)
 
         #obtains the direction of the mail
-        mail_direct = context['email']
-        mail_direct = mail_direct['@','.']
+        m_direction = '@gmail' in context['email']
 
         #verificate the email
-        if (mail_direct == 'gmail') and (context['verif']==True):
+        if (m_direction == True) and (context['verif']==True):
+            print(True)
             return context
         else:
             return {'msj':'mail not valid'}
